@@ -20,3 +20,13 @@ for (int i = 0; i < size; i++)
     System.Console.WriteLine($"Введите {i + 1}-й элемент массива:");
     array[i] = System.Console.ReadLine();
 }
+
+// Подсчитываем количество строк, длина которых меньше или равна 3 символам
+int count = 0;
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)
+    {
+        count++;
+    }
+}
