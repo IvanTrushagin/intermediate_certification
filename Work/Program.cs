@@ -30,3 +30,17 @@ for (int i = 0; i < array.Length; i++)
         count++;
     }
 }
+
+// Создаем новый массив с размером, равным количеству строк, удовлетворяющих условию
+string[] newArray = new string[count];
+
+// Копируем строки, длина которых меньше или равна 3 символам, в новый массив
+int index = 0;
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)
+    {
+        newArray[index] = array[i];
+        index++;
+    }
+}
