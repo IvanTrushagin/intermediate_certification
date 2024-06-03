@@ -11,3 +11,12 @@
 System.Console.WriteLine("Введите размер массива:");
 int size = System.Convert.ToInt32(System.Console.ReadLine());
 
+// Создаем массив строк с заданным размером
+string[] array = new string[size];
+
+// Запрашиваем у пользователя элементы массива
+for (int i = 0; i < size; i++)
+{
+    System.Console.WriteLine($"Введите {i + 1}-й элемент массива:");
+    array[i] = System.Console.ReadLine();
+}
